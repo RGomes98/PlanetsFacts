@@ -1,0 +1,18 @@
+@use '../../../stylesheets/variables' as var;
+
+.button {
+  border: none;
+  display: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.icon {
+  opacity: 24.87%;
+}
+
+@media (width <= 720px) {
+  .button {
+    display: initial;
+  }
+}

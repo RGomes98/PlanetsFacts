@@ -1,0 +1,14 @@
+@use '../../../stylesheets/variables' as var;
+
+.linkList {
+  gap: 2.063rem;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+@media (width <= 720px) {
+  .linkList {
+    display: none;
+  }
+}

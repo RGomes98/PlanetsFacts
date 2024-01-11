@@ -1,0 +1,47 @@
+@use '../../../stylesheets/variables' as var;
+
+.item {
+  display: flex;
+  align-items: center;
+  padding-block: 1.25rem;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  color: var.$white;
+  align-items: center;
+  border: transparent;
+  background-color: transparent;
+  justify-content: space-between;
+}
+
+.wrapper {
+  gap: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.color {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: var.$font-15;
+  font-weight: var.$spartan-bold;
+  font-family: var.$spartan-font;
+  line-height: var.$line-height-25;
+  letter-spacing: var.$letter-spacing-136;
+}
+
+.icon {
+}
+
+@each $name, $color in var.$colors-light-map {
+  .#{$name} {
+    background-color: $color;
+  }
+}

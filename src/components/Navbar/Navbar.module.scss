@@ -1,0 +1,43 @@
+@use '../../stylesheets/variables' as var;
+
+.navbar {
+  display: flex;
+  align-items: stretch;
+  padding-inline: 2rem;
+  justify-content: space-between;
+  border-bottom: 1px solid var.$transparent-white-twenty;
+}
+
+.logo {
+  font-size: var.$font-28;
+  padding-block: 1.375rem;
+  font-family: var.$antonio-font;
+  font-weight: var.$antonio-medium;
+  line-height: var.$line-height-52;
+  letter-spacing: var.$letter-spacing-minus-15;
+}
+
+@media (width <= 920px) {
+  .navbar {
+    align-items: center;
+    flex-direction: column;
+    padding-block: 0 1.688rem;
+  }
+
+  .logo {
+    padding-block: 1.375rem 2.438rem;
+  }
+}
+
+@media (width <= 720px) {
+  .navbar {
+    flex-direction: row;
+    padding-inline: 1.5rem;
+    padding-block: 1rem 1.063rem;
+    justify-content: space-between;
+  }
+
+  .logo {
+    padding-block: unset;
+  }
+}
