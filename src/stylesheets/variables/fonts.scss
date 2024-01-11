@@ -1,34 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap');
+
+@font-face {
+  font-weight: 400;
+  font-family: 'Spartan';
+  src: url('../assets/fonts/Spartan-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Spartan';
+  src: url('../assets/fonts/Spartan-Bold.woff2') format('woff2');
+}
 
 //Font Families
-$body-font-family: 'League Spartan';
-$h1-font-family: 'Antonio';
-$h2-font-family: 'Antonio';
-$h3-font-family: 'League Spartan';
-$h4-font-family: 'League Spartan';
+$spartan-font: 'Spartan';
+$antonio-font: 'Antonio';
+
+$body-font-family: $spartan-font;
+$h1-font-family: $antonio-font;
+$h2-font-family: $antonio-font;
+$h3-font-family: $spartan-font;
+$h4-font-family: $spartan-font;
 
 //Font Sizes
-$body-font-size: 0.875rem;
-$h1-font-size: 5rem;
-$h2-font-size: 2.5rem;
-$h3-font-size: 0.75rem;
-$h4-font-size: 0.688rem;
+$font-11: 0.688rem;
+$font-12: 0.75rem;
+$font-14: 0.875rem;
+$font-28: 1.75rem;
+$font-40: 2.5rem;
+$font-80: 5rem;
+
+$body-font-size: $font-14;
+$h1-font-size: $font-80;
+$h2-font-size: $font-40;
+$h3-font-size: $font-12;
+$h4-font-size: $font-11;
 
 //Font Weights
-$body-font-weight: 400;
-$h1-font-weight: 500;
-$h2-font-weight: 500;
-$h3-font-weight: 700;
-$h4-font-weight: 700;
+$spartan-regular: 400;
+$antonio-medium: 500;
+$spartan-bold: 700;
+
+$body-font-weight: $spartan-regular;
+$h1-font-weight: $antonio-medium;
+$h2-font-weight: $antonio-medium;
+$h3-font-weight: $spartan-bold;
+$h4-font-weight: $spartan-bold;
 
 //Line Heights
-$body-line-height: 1.563rem;
-$h1-line-height: 6.438rem;
-$h2-line-height: 3.25rem;
-$h3-line-height: 1.563rem;
-$h4-line-height: 1.563rem;
+$line-height-25: 1.563rem;
+$line-height-52: 3.25rem;
+$line-heigth-103: 6.438rem;
+
+$body-line-height: $line-height-25;
+$h1-line-height: $line-heigth-103;
+$h2-line-height: $line-height-52;
+$h3-line-height: $line-height-25;
+$h4-line-height: $line-height-25;
 
 //Letter Spacings
-$h2-letter-spacing: -1.5;
-$h3-letter-spacing: 2.6;
-$h4-letter-spacing: 1;
+$letter-spacing-minus-15: -0.094rem;
+$letter-spacing-1: 0.063rem;
+$letter-spacing-26: 0.163rem;
+
+$h2-letter-spacing: $letter-spacing-minus-15;
+$h3-letter-spacing: $letter-spacing-26;
+$h4-letter-spacing: $letter-spacing-1;
