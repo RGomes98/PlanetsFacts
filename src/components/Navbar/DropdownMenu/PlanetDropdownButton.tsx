@@ -6,14 +6,14 @@ import styles from './PlanetDropdownButton.module.scss';
 export const PlanetDropdownButton = ({ name }: { name: PlanetsOptions }) => {
   const { setActivePlanet, setIsDropdownActive } = useContext();
 
-  function handleButtonPlanet() {
+  function handlePlanetButton() {
     setActivePlanet(name);
     setIsDropdownActive(false);
   }
 
   return (
     <li className={styles.item}>
-      <button className={styles.button} onClick={handleButtonPlanet}>
+      <button className={styles.button} onClick={handlePlanetButton}>
         <div className={styles.wrapper}>
           <span className={`${styles[name.toLowerCase()]} ${styles.color}`} />
           <span className={styles.name}>{name}</span>
