@@ -1,0 +1,57 @@
+@use '../../../stylesheets/variables' as var;
+
+.button {
+  gap: 1.75rem;
+  height: 3rem;
+  display: flex;
+  cursor: pointer;
+  color: var.$white;
+  align-items: center;
+  padding-inline: 1.75rem;
+  background-color: transparent;
+  border: 1px solid var.$transparent-white-twenty;
+}
+
+.button:hover {
+  border: 1px solid transparent;
+  background-color: var.$transparent-gray-twenty;
+}
+
+.number {
+  font-size: var.$font-12;
+  font-weight: var.$spartan-bold;
+  font-family: var.$spartan-font;
+  line-height: var.$line-height-25;
+  letter-spacing: var.$letter-spacing-26;
+}
+
+.number {
+  color: var.$transparent-white-fifty;
+}
+
+.text {
+  color: var.$white;
+}
+
+@each $name, $color in var.$colors-map {
+  .#{$name} {
+    background-color: $color;
+    border-color: transparent;
+  }
+
+  .#{$name}:hover {
+    background-color: $color;
+  }
+}
+
+@media (width <= 1000px) {
+  .button {
+    height: 2.5rem;
+  }
+
+  .text,
+  .number {
+    white-space: nowrap;
+    letter-spacing: var.$letter-spacing-193;
+  }
+}

@@ -1,0 +1,95 @@
+@use '../../../stylesheets/variables' as var;
+
+.container {
+  width: 100%;
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: var.$font-14;
+  font-family: var.$spartan-font;
+  line-height: var.$line-height-25;
+  font-weight: var.$spartan-regular;
+}
+
+.sourceWrapper {
+  gap: 0.3rem;
+  display: flex;
+  align-items: center;
+  font-size: var.$font-14;
+  line-height: var.$line-height-25;
+}
+
+.source {
+  font-weight: var.$spartan-regular;
+  color: var.$transparent-white-fifty;
+}
+
+.link {
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-weight: var.$spartan-bold;
+  color: var.$transparent-white-fifty;
+}
+
+.icon {
+}
+
+@media (width <= 1275px) {
+  .container {
+    gap: 2.313rem;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .headingWrapper {
+    max-width: initial;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .metricWrapper {
+    gap: 0.688rem;
+  }
+}
+
+@media (width <= 1000px) {
+  .container {
+    gap: 1.5rem;
+  }
+
+  .heading {
+    line-height: initial;
+    font-size: var.$font-48;
+  }
+
+  .description {
+    font-size: var.$font-11;
+    line-height: var.$line-height-22;
+    font-weight: var.$spartan-regular;
+  }
+
+  .sourceWrapper {
+    margin-top: 0.5rem;
+    font-size: var.$font-12;
+  }
+}
+
+@media (width <= 720px) {
+  .heading {
+    font-size: var.$font-40;
+  }
+
+  .sourceWrapper {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,79 @@
+@use '../../../stylesheets/variables' as var;
+
+.container {
+  display: flex;
+  position: relative;
+  margin-inline: auto;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.geologyImage {
+  width: 10.188rem;
+  height: 12.438rem;
+  position: absolute;
+}
+
+@each $name, $position in var.$position-map {
+  .#{$name} {
+    bottom: $position;
+  }
+}
+
+@media (width > 1440px) {
+  .saturn {
+    max-width: 38.75rem;
+  }
+}
+
+@media (width <= 1275px) {
+  .saturn,
+  .jupiter {
+    max-width: 75%;
+  }
+}
+
+@media (width <= 1000px) {
+  .image {
+    max-width: 65%;
+  }
+
+  .geologyImage {
+    width: 8rem;
+    height: 10rem;
+  }
+
+  @each $name, $position in var.$position-map-smaller-devices {
+    .#{$name} {
+      bottom: $position;
+    }
+  }
+}
+
+@media (width <= 720px) {
+  .image {
+    max-width: 60%;
+  }
+
+  .geologyImage {
+    height: 9rem;
+    width: 7.5rem;
+    rotate: -35deg;
+  }
+
+  @each $name, $position in var.$position-map-bottom-mobile-devices {
+    .#{$name} {
+      bottom: $position;
+    }
+  }
+
+  @each $name, $position in var.$position-map-right-mobile-devices {
+    .#{$name} {
+      right: $position;
+    }
+  }
+}

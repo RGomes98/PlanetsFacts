@@ -1,0 +1,35 @@
+@use '../../../stylesheets/variables' as var;
+
+.button {
+  display: flex;
+  align-items: center;
+  border: transparent;
+  padding-top: 0.25rem;
+  flex-direction: column;
+  background-color: transparent;
+  justify-content: space-between;
+}
+
+.text {
+  margin-top: auto;
+  font-size: var.$font-9;
+  font-weight: var.$spartan-bold;
+  color: var.$transparent-white-fifty;
+  letter-spacing: var.$letter-spacing-193;
+}
+
+.activeText {
+  color: var.$white;
+}
+
+.bar {
+  width: 120%;
+  margin-top: auto;
+  height: 0.25rem;
+}
+
+@each $name, $color in var.$colors-map {
+  .#{$name} {
+    background-color: $color;
+  }
+}

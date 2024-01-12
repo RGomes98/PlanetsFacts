@@ -1,0 +1,149 @@
+@use '../../stylesheets/variables' as var;
+
+.mobileWrapper {
+  width: 100%;
+  display: none;
+  height: 3.125rem;
+  margin-bottom: 4rem;
+  padding-inline: 1.5rem;
+  border-top: 1px solid var.$transparent-white-twenty;
+  border-bottom: 1px solid var.$transparent-white-twenty;
+}
+
+.container {
+  width: 100%;
+  gap: 5.438rem;
+  display: flex;
+  margin-top: auto;
+  flex-direction: column;
+  padding-bottom: 3.5rem;
+  padding-inline: 10.313rem;
+  animation: fadeIn ease 500ms;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.wrapper {
+  gap: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.headingWrapper {
+  gap: 2.5rem;
+  display: flex;
+  max-width: 21.875rem;
+  flex-direction: column;
+}
+
+.buttonWrapper {
+  gap: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.metricWrapper {
+  gap: 1.875rem;
+  display: grid;
+  align-items: center;
+  grid-auto-rows: 8rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.saturn {
+  gap: 2rem;
+}
+
+@media (width >= 1920px) {
+  .headingWrapper {
+    max-width: 23.438rem;
+  }
+}
+
+@media (width > 1440px) {
+  .jupiter {
+    gap: 3rem;
+  }
+}
+
+@media (width <= 1275px) {
+  .container {
+    gap: 2.313rem;
+    padding-inline: 2.5rem;
+  }
+
+  .wrapper {
+    gap: 8rem;
+    flex-direction: column;
+  }
+
+  .headingWrapper {
+    gap: 8rem;
+    max-width: initial;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .metricWrapper {
+    gap: 0.688rem;
+  }
+}
+
+@media (width <= 1000px) {
+  .container {
+    gap: 1.688rem;
+  }
+
+  .headingWrapper {
+    gap: 6rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .metricWrapper {
+    grid-auto-rows: 5.5rem;
+  }
+}
+
+@media (width <= 720px) {
+  .mobileWrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container {
+    gap: 1.75rem;
+    padding-inline: 1.5rem;
+  }
+
+  .wrapper {
+    gap: 6rem;
+    text-align: center;
+  }
+
+  .headingWrapper {
+    flex-direction: column;
+  }
+
+  .buttonWrapper {
+    display: none;
+  }
+
+  .metricWrapper {
+    grid-auto-rows: 3rem;
+    grid-template-columns: 1fr;
+  }
+}
