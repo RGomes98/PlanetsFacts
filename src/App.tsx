@@ -8,7 +8,9 @@ import './stylesheets/globals.scss';
 
 function App() {
   const { activePlanet } = useContext();
-  const { status } = usePlanetFetch(); //eslint-disable-line @typescript-eslint/no-unused-vars
+  const { status } = usePlanetFetch();
+
+  if (status === 'LOADING') return null;
 
   return (
     <Fragment>
