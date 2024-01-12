@@ -8,7 +8,7 @@ import './stylesheets/globals.scss';
 
 function App() {
   const { activePlanet } = useContext();
-  const { status } = usePlanetFetch();
+  const { status } = usePlanetFetch(); //eslint-disable-line @typescript-eslint/no-unused-vars
 
   return (
     <Fragment>

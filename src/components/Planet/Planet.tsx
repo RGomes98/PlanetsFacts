@@ -20,7 +20,7 @@ export const Planet = () => {
   const planet = planetsData.find(({ name }) => name.toUpperCase() === activePlanet);
   if (!planet) return null;
 
-  const { name, overview, structure, geology, rotation, revolution, radius, temperature, images } = planet;
+  const { name, rotation, revolution, radius, temperature, images } = planet;
 
   function getPlanetDetails(planet: PlanetType, activeButton: ButtonOptions) {
     const map: Record<ButtonOptions, Geology> = {
