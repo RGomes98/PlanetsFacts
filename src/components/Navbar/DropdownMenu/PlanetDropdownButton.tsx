@@ -1,9 +1,9 @@
-import { PlanetsOptions, useContext } from '../../../context/Context';
+import { PlanetOptions, useContext } from '../../../context/Context';
 
 import ChevronIcon from '../../../assets/icon-chevron.svg?react';
 import styles from './PlanetDropdownButton.module.scss';
 
-export const PlanetDropdownButton = ({ name }: { name: PlanetsOptions }) => {
+export const PlanetDropdownButton = ({ name }: { name: PlanetOptions }) => {
   const { setActivePlanet, setIsDropdownActive } = useContext();
 
   function handlePlanetButton() {
