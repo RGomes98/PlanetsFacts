@@ -1,8 +1,8 @@
-import { type PlanetsOptions, useContext } from '../../../context/Context';
+import { type PlanetsOption, useContext } from '../../../context/Context';
 
 import styles from './PlanetButton.module.scss';
 
-export const PlanetButton = ({ name, isActive }: { name: PlanetsOptions; isActive: boolean }) => {
+export const PlanetButton = ({ name, isActive }: { name: PlanetsOption; isActive: boolean }) => {
   const { activePlanet, setActivePlanet } = useContext();
 
   return (
