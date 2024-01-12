@@ -2,14 +2,16 @@
 
 .dropdownMenuWrapper {
   opacity: 0;
+  width: 100%;
   display: none;
-  padding: 1.5rem;
+  padding-inline: 1.5rem;
   grid-template-rows: 0fr;
-  transition: grid-template-rows 500ms, opacity 500ms;
+  transition: grid-template-rows 500ms, padding-top 500ms, opacity 500ms;
 }
 
 .dropdownMenuActive {
   opacity: 1;
+  padding-top: 1.5rem;
   grid-template-rows: 1fr;
 }
 
