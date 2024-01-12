@@ -23,12 +23,17 @@ $h3-font-family: $spartan-font;
 $h4-font-family: $spartan-font;
 
 //Font Sizes
+$font-8: 0.5rem;
+$font-9: 0.563rem;
 $font-11: 0.688rem;
 $font-12: 0.75rem;
 $font-14: 0.875rem;
 $font-15: 0.938rem;
+$font-20: 1.25rem;
+$font-24: 1.5rem;
 $font-28: 1.75rem;
 $font-40: 2.5rem;
+$font-48: 3rem;
 $font-80: 5rem;
 
 $body-font-size: $font-14;
@@ -49,7 +54,9 @@ $h3-font-weight: $spartan-bold;
 $h4-font-weight: $spartan-bold;
 
 //Line Heights
+$line-height-16: 1rem;
 $line-height-25: 1.563rem;
+$line-height-22: 1.375rem;
 $line-height-52: 3.25rem;
 $line-heigth-103: 6.438rem;
 
@@ -61,8 +68,11 @@ $h4-line-height: $line-height-25;
 
 //Letter Spacings
 $letter-spacing-minus-15: -0.094rem;
+$letter-spacing-minus-09: 0.056rem;
+$letter-spacing-minus-073: 0.046rem;
 $letter-spacing-1: 0.063rem;
 $letter-spacing-136: 0.085rem;
+$letter-spacing-193: 0.121rem;
 $letter-spacing-26: 0.163rem;
 
 $h2-letter-spacing: $letter-spacing-minus-15;

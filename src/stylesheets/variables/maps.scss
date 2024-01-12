@@ -1,0 +1,72 @@
+@use '../variables/colors.scss' as var;
+
+//Planets Colors Map
+$colors-map: (
+  mercury: var.$mercury,
+  venus: var.$venus,
+  earth: var.$earth,
+  mars: var.$mars,
+  jupiter: var.$jupiter,
+  saturn: var.$saturn,
+  uranus: var.$uranus,
+  neptune: var.$neptune,
+);
+
+//Planets Colors Light Map
+$colors-light-map: (
+  mercury: var.$mercury-light,
+  venus: var.$venus-light,
+  earth: var.$earth-light,
+  mars: var.$mars-light,
+  jupiter: var.$jupiter-light,
+  saturn: var.$saturn-light,
+  uranus: var.$uranus-light,
+  neptune: var.$neptune-light,
+);
+
+//Positions Map
+$position-map: (
+  mercury: -8.5rem,
+  venus: -5rem,
+  earth: -3.5rem,
+  mars: -7rem,
+  jupiter: 0.5rem,
+  saturn: 3.5rem,
+  uranus: -4rem,
+  neptune: -3.5rem,
+);
+
+//Positions Map Smaller Devices
+$position-map-smaller-devices: (
+  mercury: -7.5rem,
+  venus: -5rem,
+  earth: -4rem,
+  mars: -6.5rem,
+  jupiter: -1.5rem,
+  saturn: 1.5rem,
+  uranus: -4rem,
+  neptune: -4.5rem,
+);
+
+//Positions Map Mobile
+$position-map-bottom-mobile-devices: (
+  mercury: -4.5rem,
+  venus: -4.5rem,
+  earth: -5rem,
+  mars: -5rem,
+  jupiter: -3rem,
+  saturn: -3rem,
+  uranus: -5rem,
+  neptune: -5rem,
+);
+
+$position-map-right-mobile-devices: (
+  mercury: -2rem,
+  venus: 0.5rem,
+  earth: 1.5rem,
+  mars: 0rem,
+  jupiter: 3rem,
+  saturn: 5rem,
+  uranus: 1.7rem,
+  neptune: 1.5rem,
+);

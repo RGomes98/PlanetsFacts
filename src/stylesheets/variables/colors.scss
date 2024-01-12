@@ -5,8 +5,10 @@ $dark-gray: hsl(240, 17%, 26%);
 $light-gray: hsl(240, 6%, 54%);
 
 //Transparent Colors
-$transparent-white-twenty: hsl(0, 0%, 100%, 20%);
 $transparent-white-ten: hsl(0, 0%, 100%, 10%);
+$transparent-gray-twenty: hsl(0, 0%, 85%, 20%);
+$transparent-white-fifty: hsl(0, 0%, 100%, 50%);
+$transparent-white-twenty: hsl(0, 0%, 100%, 20%);
 
 //Planets Colors
 $mercury: hsl(194, 48%, 49%);
@@ -18,18 +20,6 @@ $saturn: hsl(17, 73%, 46%);
 $uranus: hsl(169, 73%, 44%);
 $neptune: hsl(222, 87%, 56%);
 
-//Planets Colors Map
-$colors-map: (
-  mercury: $mercury,
-  venus: $venus,
-  earth: $earth,
-  mars: $mars,
-  jupiter: $jupiter,
-  saturn: $saturn,
-  uranus: $uranus,
-  neptune: $neptune,
-);
-
 //Planet Colors Light
 $mercury-light: hsl(196, 83%, 93%);
 $venus-light: hsl(39, 88%, 73%);
@@ -39,15 +29,3 @@ $jupiter-light: hsl(27, 75%, 70%);
 $saturn-light: hsl(40, 96%, 70%);
 $uranus-light: hsl(168, 82%, 67%);
 $neptune-light: hsl(222, 95%, 63%);
-
-//Planets Colors Light Map
-$colors-light-map: (
-  mercury: $mercury-light,
-  venus: $venus-light,
-  earth: $earth-light,
-  mars: $mars-light,
-  jupiter: $jupiter-light,
-  saturn: $saturn-light,
-  uranus: $uranus-light,
-  neptune: $neptune-light,
-);
