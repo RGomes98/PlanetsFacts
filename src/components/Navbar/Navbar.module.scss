@@ -1,6 +1,7 @@
 @use '../../stylesheets/variables' as var;
 
 .navbar {
+  width: 100%;
   display: flex;
   align-items: stretch;
   padding-inline: 2rem;
@@ -17,7 +18,7 @@
   letter-spacing: var.$letter-spacing-minus-15;
 }
 
-@media (width <= 920px) {
+@media (width <= 1000px) {
   .navbar {
     align-items: center;
     flex-direction: column;
@@ -35,9 +36,11 @@
     padding-inline: 1.5rem;
     padding-block: 1rem 1.063rem;
     justify-content: space-between;
+    border-bottom: 1px solid transparent;
   }
 
   .logo {
+    padding-block: 1rem;
     padding-block: unset;
   }
 }
