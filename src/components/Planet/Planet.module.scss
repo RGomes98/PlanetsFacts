@@ -148,7 +148,7 @@
   }
 }
 
-@media (height <= 925px) {
+@media ((width >= 1280px) and (height <= 925px)) {
   .container {
     margin-top: 7rem;
   }
