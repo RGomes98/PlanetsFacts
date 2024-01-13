@@ -1,30 +1,42 @@
-# React + TypeScript + Vite
+# Planets Facts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository showcases my solution to the [Planets facts challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f/hub). Frontend Mentor challenges have been instrumental in honing my coding skills by providing real-world projects.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### The Challenge
 
-## Expanding the ESLint configuration
+Users should be able to:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- View the optimal layout for the app depending on their device's screen size.
+- See hover states for all interactive elements on the page.
+- View each planet page and toggle between "Overview", "Internal Structure", and "Surface Geology".
 
-- Configure the top-level `parserOptions` property like this:
+### Preview
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+![Preview](./screenshot.png)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Links
+
+- **Live Site:** [Vercel](https://planets-facts-rgomes98.vercel.app/)
+- **Solution:** [Frontend Mentor](https://www.frontendmentor.io/solutions/planets-facts-site-solution-BtpbgwQ7p-)
+
+## My Process
+
+### Built With
+
+- SASS.
+- Figma.
+- React.js.
+- TypeScript.
+
+## Continued Development
+
+For future projects, I plan to delve deeper into:
+
+- Exploring advanced SASS features for more efficient styling.
+- Mastering TypeScript for enhanced type safety and better code organization.
+
+## Acknowledgments
+
+A big shoutout to the Frontend Mentor community for providing challenging projects and fostering a collaborative learning environment.
