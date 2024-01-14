@@ -48,13 +48,6 @@
   flex-direction: column;
 }
 
-.buttonWrapper {
-  gap: 1rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 .metricWrapper {
   gap: 1.875rem;
   display: grid;
@@ -136,10 +129,6 @@
 
   .headingWrapper {
     flex-direction: column;
-  }
-
-  .buttonWrapper {
-    display: none;
   }
 
   .metricWrapper {

@@ -1,4 +1,3 @@
-import { Fragment } from 'react';
 import {
   ButtonOptions,
   Geology,
@@ -6,13 +5,14 @@ import {
   Planet as PlanetType,
   useContext,
 } from '../../context/Context';
-import { Button } from './Button/Button';
-import { Detail } from './Detail/Detail';
+import { MobileNavigation } from './MobileNavigation/MobileNavigation';
+import { ButtonWrapper } from './Button/ButtonWrapper';
 import { Heading } from './Heading/Heading';
 import { Images } from './Images/Images';
+import { Detail } from './Detail/Detail';
+import { Fragment } from 'react';
 
 import styles from './Planet.module.scss';
-import { MobileNavigation } from './MobileNavigation/MobileNavigation';
 
 export const Planet = () => {
   const { activePlanet, activeButton, planetsData, buttons } = useContext();
@@ -63,20 +63,7 @@ export const Planet = () => {
           <Images name={name} images={activeImages} />
           <div className={styles.headingWrapper}>
             <Heading name={name} content={content} source={source} />
-            <div className={styles.buttonWrapper}>
-              {buttons.map((buttonText, idx) => {
-                const isActive = buttonText === activeButton;
-
-                return (
-                  <Button
-                    key={buttonText}
-                    isActive={isActive}
-                    buttonText={buttonText}
-                    buttonNumber={`0${idx + 1}`}
-                  />
-                );
-              })}
-            </div>
+            <ButtonWrapper />
           </div>
         </div>
         <div className={styles.metricWrapper}>
