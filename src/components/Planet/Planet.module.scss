@@ -38,10 +38,6 @@
   flex-direction: column;
 }
 
-.saturn {
-  gap: 2rem;
-}
-
 @media (width >= 1920px) {
   .headingWrapper {
     max-width: 23.438rem;
@@ -51,6 +47,10 @@
 @media (width >= 1275px) {
   .jupiter {
     gap: 3rem;
+  }
+
+  .saturn {
+    gap: 2rem;
   }
 }
 
