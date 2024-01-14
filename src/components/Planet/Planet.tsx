@@ -6,10 +6,10 @@ import {
   useContext,
 } from '../../context/Context';
 import { MobileNavigation } from './MobileNavigation/MobileNavigation';
-import { ButtonWrapper } from './Button/ButtonWrapper';
 import { Heading } from './Heading/Heading';
+import { Buttons } from './Button/Buttons';
 import { Images } from './Images/Images';
-import { Detail } from './Detail/Detail';
+import { Metrics } from './Detail/Metrics';
 import { Fragment } from 'react';
 
 import styles from './Planet.module.scss';
@@ -63,15 +63,10 @@ export const Planet = () => {
           <Images name={name} images={activeImages} />
           <div className={styles.headingWrapper}>
             <Heading name={name} content={content} source={source} />
-            <ButtonWrapper />
+            <Buttons />
           </div>
         </div>
-        <div className={styles.metricWrapper}>
-          <Detail heading='ROTATION TIME' metric={rotation} />
-          <Detail heading='REVOLUTION TIME' metric={revolution} />
-          <Detail heading='RADIUS' metric={radius} />
-          <Detail heading='AVERAGE TEMP.' metric={temperature} />
-        </div>
+        <Metrics radius={radius} rotation={rotation} revolution={revolution} temperature={temperature} />
       </div>
     </Fragment>
   );

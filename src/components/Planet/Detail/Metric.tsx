@@ -1,6 +1,6 @@
-import styles from './Detail.module.scss';
+import styles from './Metric.module.scss';
 
-export const Detail = ({ heading, metric }: { heading: string; metric: string }) => {
+export const Metric = ({ heading, metric }: { heading: string; metric: string }) => {
   return (
     <div className={styles.container}>
       <h4 className={styles.heading}>{heading}</h4>
