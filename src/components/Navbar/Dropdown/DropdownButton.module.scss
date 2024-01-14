@@ -37,9 +37,6 @@
   letter-spacing: var.$letter-spacing-136;
 }
 
-.icon {
-}
-
 @each $name, $color in var.$colors-light-map {
   .#{$name} {
     background-color: $color;

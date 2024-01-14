@@ -1,16 +1,16 @@
 import { useContext } from '../../../context/Context';
-import { PlanetButton } from './PlanetButton';
+import { NavigationButton } from './NavigationButton';
 
-import styles from './PlanetList.module.scss';
+import styles from './NavigationList.module.scss';
 
-export const PlanetList = () => {
+export const NavigationList = () => {
   const { planets, activePlanet } = useContext();
 
   return (
     <ul className={styles.linkList}>
       {planets.map((planetName) => {
         const isActive = planetName === activePlanet;
-        return <PlanetButton key={planetName} name={planetName} isActive={isActive} />;
+        return <NavigationButton key={planetName} name={planetName} isActive={isActive} />;
       })}
     </ul>
   );

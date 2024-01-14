@@ -1,6 +1,6 @@
-import { ToggleDropdownButton } from './DropdownMenu/ToggleDropdownButton';
-import { PlanetDropdownMenu } from './DropdownMenu/PlanetDropdownMenu';
-import { PlanetList } from './PlanetNavigation/PlanetList';
+import { ToggleDropdownButton } from './Dropdown/ToggleDropdownButton';
+import { DropdownMenu } from './Dropdown/DropdownMenu';
+import { NavigationList } from './Navigation/NavigationList';
 import { Fragment } from 'react';
 
 import styles from './Navbar.module.scss';
@@ -10,10 +10,10 @@ export const Navbar = () => {
     <Fragment>
       <nav className={styles.navbar}>
         <span className={styles.logo}>THE PLANETS</span>
-        <PlanetList />
+        <NavigationList />
         <ToggleDropdownButton />
       </nav>
-      <PlanetDropdownMenu />
+      <DropdownMenu />
     </Fragment>
   );
 };

@@ -1,16 +1,16 @@
-import { PlanetDropdownButton } from './PlanetDropdownButton';
+import { DropdownButton } from './DropdownButton';
 import { useContext } from '../../../context/Context';
 
-import styles from './PlanetDropdownMenu.module.scss';
+import styles from './DropdownMenu.module.scss';
 
-export const PlanetDropdownMenu = () => {
+export const DropdownMenu = () => {
   const { planets, isDropdownActive } = useContext();
 
   return (
     <div className={`${styles.dropdownMenuWrapper} ${(isDropdownActive && styles.dropdownMenuActive) || ''}`}>
       <ul className={styles.dropdownMenu}>
         {planets.map((planetName) => (
-          <PlanetDropdownButton key={planetName} name={planetName} />
+          <DropdownButton key={planetName} name={planetName} />
         ))}
       </ul>
     </div>
