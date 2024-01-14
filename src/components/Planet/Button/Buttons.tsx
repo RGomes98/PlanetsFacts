@@ -1,9 +1,9 @@
 import { useContext } from '../../../context/Context';
 import { Button } from './Button';
 
-import styles from './ButtonWrapper.module.scss';
+import styles from './Buttons.module.scss';
 
-export const ButtonWrapper = () => {
+export const Buttons = () => {
   const { buttons, activeButton } = useContext();
 
   return (
