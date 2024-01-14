@@ -3,8 +3,8 @@ import { usePlanetDetails } from '../../hooks/usePlanetDetails';
 import { usePlanetImages } from '../../hooks/usePlanetImages';
 import { useContext } from '../../context/Context';
 import { Heading } from './Heading/Heading';
-import { Buttons } from './Button/Buttons';
-import { Metrics } from './Detail/Metrics';
+import { Buttons } from './Buttons/Buttons';
+import { Metrics } from './Metrics/Metrics';
 import { Images } from './Images/Images';
 import { Fragment } from 'react';
 
