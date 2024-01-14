@@ -1,15 +1,5 @@
 @use '../../stylesheets/variables' as var;
 
-.mobileWrapper {
-  width: 100%;
-  display: none;
-  height: 3.125rem;
-  margin-bottom: 4rem;
-  padding-inline: 1.5rem;
-  border-top: 1px solid var.$transparent-white-twenty;
-  border-bottom: 1px solid var.$transparent-white-twenty;
-}
-
 .container {
   width: 100%;
   gap: 5.438rem;
@@ -96,11 +86,6 @@
 }
 
 @media (width <= 720px) {
-  .mobileWrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .container {
     gap: 1.75rem;
     padding-inline: 1.5rem;

@@ -1,18 +1,18 @@
-import { type ButtonOptions, useContext } from '../../../context/Context';
+import { useContext } from '../../../context/Context';
+import { Button } from './Button';
+
 import styles from './MobileNavigation.module.scss';
 
-type Button = { buttonText: ButtonOptions; isActive: boolean };
-
-export const MobileNavigation = ({ buttonText, isActive }: Button) => {
-  const { activePlanet, setActiveButton } = useContext();
-
-  const message =
-    buttonText.split(' ')[0] === 'INTERNAL' ? buttonText.split(' ')[1] : buttonText.split(' ')[0];
+export const MobileNavigation = () => {
+  const { buttons, activeButton } = useContext();
 
   return (
-    <button className={styles.button} onClick={() => setActiveButton(buttonText)}>
-      <h3 className={`${styles.text} ${(isActive && styles.activeText) || ''}`}>{message}</h3>
-      <span className={`${styles.bar} ${(isActive && styles[activePlanet.toLowerCase()]) || ''}`} />
-    </button>
+    <div className={styles.wrapper}>
+      {buttons.map((buttonText) => {
+        const isActive = buttonText === activeButton;
+
+        return <Button key={buttonText} isActive={isActive} buttonText={buttonText} />;
+      })}
+    </div>
   );
 };

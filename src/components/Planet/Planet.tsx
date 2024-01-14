@@ -5,6 +5,7 @@ import {
   Planet as PlanetType,
   useContext,
 } from '../../context/Context';
+
 import { MobileNavigation } from './MobileNavigation/MobileNavigation';
 import { Heading } from './Heading/Heading';
 import { Buttons } from './Button/Buttons';
@@ -15,7 +16,7 @@ import { Fragment } from 'react';
 import styles from './Planet.module.scss';
 
 export const Planet = () => {
-  const { activePlanet, activeButton, planetsData, buttons } = useContext();
+  const { activePlanet, activeButton, planetsData } = useContext();
 
   const planet = planetsData.find(({ name }) => name.toUpperCase() === activePlanet);
   if (!planet) return null;
@@ -51,13 +52,7 @@ export const Planet = () => {
 
   return (
     <Fragment>
-      <div className={styles.mobileWrapper}>
-        {buttons.map((buttonText) => {
-          const isActive = buttonText === activeButton;
-
-          return <MobileNavigation key={buttonText} isActive={isActive} buttonText={buttonText} />;
-        })}
-      </div>
+      <MobileNavigation />
       <div className={`${styles.container} ${styles[activePlanet.toLowerCase()] || ''}`}>
         <div className={styles.wrapper}>
           <Images name={name} images={activeImages} />
