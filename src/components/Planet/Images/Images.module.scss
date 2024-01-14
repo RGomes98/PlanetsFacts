@@ -10,6 +10,16 @@
 .image {
   width: 100%;
   height: auto;
+  animation: fadeIn ease-out 300ms;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .geologyImage {

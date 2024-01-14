@@ -7,6 +7,14 @@
   align-items: center;
 }
 
+@media (width <= 1000px) {
+  .linkList {
+    gap: 1.5rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
 @media (width <= 720px) {
   .linkList {
     display: none;

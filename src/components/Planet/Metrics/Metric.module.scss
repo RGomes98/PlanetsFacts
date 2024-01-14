@@ -15,6 +15,10 @@
   color: var.$transparent-white-fifty;
 }
 
+.metric {
+  text-transform: uppercase;
+}
+
 @media (width <= 1000px) {
   .container {
     gap: 0.375rem;
