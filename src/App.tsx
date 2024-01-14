@@ -8,9 +8,7 @@ import './stylesheets/globals.scss';
 
 function App() {
   const { activePlanet } = useContext();
-  const { status } = usePlanetFetch();
-
-  if (status === 'LOADING') return null;
+  usePlanetFetch();
 
   return (
     <Fragment>
