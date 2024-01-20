@@ -32,6 +32,10 @@
 
 .text {
   color: var.$white;
+  font-size: var.$font-12;
+  font-weight: var.$spartan-bold;
+  line-height: var.$line-height-25;
+  letter-spacing: var.$letter-spacing-26;
 }
 
 @each $name, $color in var.$colors-map {
@@ -54,5 +58,9 @@
   .number {
     white-space: nowrap;
     letter-spacing: var.$letter-spacing-193;
+  }
+
+  .text {
+    font-size: var.$font-9;
   }
 }
