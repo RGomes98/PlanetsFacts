@@ -1,6 +1,6 @@
 # Planets Facts
 
-This repository showcases my solution to the [Planets facts challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f/hub). Frontend Mentor challenges have been instrumental in honing my coding skills by providing real-world projects.
+This repository showcases my solution to the [Planets facts challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f). Frontend Mentor challenges have been instrumental in honing my coding skills by providing real-world projects.
 
 ## Overview
 
